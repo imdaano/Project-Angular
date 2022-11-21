@@ -1,0 +1,8 @@
+<div class="main-container">
+    <app-item 
+        *ngFor="let item of items"
+        [item]="item"
+        (deleteItem)="deleteItem($event)"
+        (toggleItem)="toggleItem($event)"></app-item>
+    <app-total message="Total a apoquinar: " [total] = "total"></app-total>
+</div>
